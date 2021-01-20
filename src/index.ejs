@@ -1,0 +1,20 @@
+<% var inc = function(name, sendData) {
+    return require('./' + name + '.ejs')(sendData);
+}; %>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+</head>
+<body>
+    <% for (let i = 0; i < 5; i++) {%>
+        <a href="#"><%= i %></a>
+    <% } %>
+
+    <%=inc('comp/component', {title: "hello world"}) %>
+    <%=inc('aaa', {title: "hello world"}) %>
+</body>
+</html>
