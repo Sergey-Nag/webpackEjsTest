@@ -1,6 +1,5 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-// const WatchExternalFilesPlugin = require('webpack-watch-files-plugin');
 const pagesData = require("./pages-data.json");
 
 module.exports = {
